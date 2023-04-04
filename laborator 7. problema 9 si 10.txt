@@ -1,0 +1,19 @@
+///problema1
+
+represent = function(k,n) {
+  prob = dgeom(1:n,prob=k)
+  barplot(prob,main = "Distributia" , xlab = "Nr de incercari" , ylab = "Probabilitate")
+}
+represent( k = 0.2, n= 12)
+
+///problema2
+
+
+represent_poisson = function(k, n) 
+{
+  x = 0:n
+  y = dpois(x, k)
+  barplot(y, names.arg = x, xlab = "x", ylab = "Probabilitate", main = paste("Reprezentarea grafica pentru distributia Poisson"))
+}
+
+represent_poisson(2,8)
