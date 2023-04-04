@@ -1,0 +1,10 @@
+///ex 4
+
+grafic_binomial = function(n, p) {
+  x = 0:n
+  y = dbinom(x, n, p)
+  barplot(y, names.arg = x, xlab = "x", ylab = "Probabilitate", main = paste("Reprezentarea grafica pentru distributia Binomiala"))
+}
+grafic_binomial(18, 0.25)
+grafic_binomial(40, 0.5)
+grafic_binomial(30, 0.8)
