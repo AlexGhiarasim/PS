@@ -1,7 +1,7 @@
 #A1.a
 
 #functie pentru graficul distributiilor
-distributie = function(lambda, p, n, k) 
+plot_distributions = function(lambda, p, n, k) 
 {
   k_valori = k:n
   poisson_prob = dpois(k_valori, lambda)
